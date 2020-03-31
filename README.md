@@ -1,4 +1,4 @@
-# taobaoAPI
+# egg-create-example
 
 kankan egg framework, separate from taobao live api
 

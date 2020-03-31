@@ -15,8 +15,4 @@ module.exports = app => {
     router.get('/v1/liveStreamBestSales', controller.v1.liveStreamBestSales.get);
 
     router.get('/v1/anchorFansInc', controller.v1.anchorFansInc.get);
-    router.patch('/v1/liveStreamBestSales', controller.v1.liveStreamBestSales.patch);
-    router.patch('/v1/liveStreamBestSellers', controller.v1.liveStreamBestSellers.patch);
-    router.patch('/v1/anchorFansInc', controller.v1.anchorFansInc.patch);
-    router.patch('/v1/liveStream', controller.v1.liveStream.patch);
 }
