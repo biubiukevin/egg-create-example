@@ -1,0 +1,19 @@
+{
+  "apps": [
+    {
+      "name": "taobaoLiveAPI",
+      "script": "./index.js",
+      "env": {
+        "NODE_ENV": "local"
+      },
+      "env_production": {
+        "NODE_ENV": "production",
+        "EGG_SERVER_ENV": "production"
+      },
+      "env_testing": {
+        "NODE_ENV": "testing",
+        "EGG_SERVER_ENV": "testing"
+      }
+    }
+  ]
+}
