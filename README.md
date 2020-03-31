@@ -1,6 +1,6 @@
 # taobaoAPI
 
-kankan egg framework separate from taobao live api
+kankan egg framework, separate from taobao live api
 
 ## QuickStart
 
