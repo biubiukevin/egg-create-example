@@ -1,7 +1,7 @@
 {
-  "name": "taobaoliveapi",
+  "name": "egg-create-example",
   "version": "1.0.0",
-  "description": "kankan taobao api",
+  "description": "kankan egg create framework, separate from taobao live api",
   "private": true,
   "egg": {
     "declarations": true
@@ -11,7 +11,7 @@
     "egg": "^2.26.0",
     "egg-scripts": "^2.11.0",
     "egg-sequelize": "^5.2.1",
-    "egg-snowflake": "^1.2.0",
+    "egg-snowflake-js": "^1.1.2",
     "etcd3": "^0.2.13",
     "mysql2": "^2.1.0",
     "ramda": "^0.27.0"

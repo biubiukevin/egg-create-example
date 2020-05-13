@@ -7,7 +7,7 @@ const hostname = os.hostname();
 module.exports = options => {
     return async function tracer(ctx, next) {
         ctx.tracer = {
-            traceId: hostname + '-' + ctx.app.snowflake.uuid()
+            traceId: hostname + '-' + ctx.app.snowflake.next()
         }
         await next();
     };

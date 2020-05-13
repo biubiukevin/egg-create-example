@@ -32,7 +32,7 @@ class StatisticService extends Service {
             const anchor = anchorDataGroup[i];
             if (anchor.length >= 2) {
                 const newAnchorFansDaily = {
-                    id: app.snowflake.uuid(),
+                    id: app.snowflake.next(),
                     anchorId: R.head(anchor).get('anchorId'),
                     inc: R.head(anchor).get('fans') - R.last(anchor).get('fans'),
                     fans: R.head(anchor).get('fans'),
@@ -40,7 +40,7 @@ class StatisticService extends Service {
                     time: ctx.helper.getTimeByMode(mode, timeRange)
                 }
                 const newAnchorStatistic = {
-                    id: app.snowflake.uuid(),
+                    id: app.snowflake.next(),
                     anchorId: R.head(anchor).get('anchorId'),
                     dailyInc: R.head(anchor).get('fans') - R.last(anchor).get('fans'),
                 }

@@ -20,13 +20,7 @@ module.exports = appInfo => {
     snowflake: {
       client: {
         machineId: 1,
-        // `Number` if 6-bit length (the default value),
-        // we could handle servers from `2 ** 6` different machines.
-        // And if 0, there will be no machine id in the uuid
-        machineIdBitLength: 6,
-        workerIdBitLength: 4,
-        // Could handle max 4096 requests per millisecond
-        serialIdBitLength: 12
+        workerId: 1
       }
     }
   }
