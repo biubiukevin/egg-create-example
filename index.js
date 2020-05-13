@@ -47,9 +47,7 @@ if (process.env.EGG_SERVER_ENV === 'local') {
 } else if (process.env.EGG_SERVER_ENV === 'production') {
   serverOptions.workers = 2;
   etcdConfig.hosts = [
-    "172.17.0.49:32771",
-    "172.17.0.49:32769",
-    "172.17.0.49:32773"
+
   ]
 } else {
   const errMessage = moment().format('YYYY-MM-DD HH:mm:ss') + 'There is no NODE_ENV or EGG_SERVER_ENV';
